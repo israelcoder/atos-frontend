@@ -1,0 +1,13 @@
+/frontend
+├── pages
+│   ├── index.js             // Dashboard principal (lista de chamados, etc.)
+│   ├── login.js             // Tela de login
+│   ├── cadastro.js          // Tela de cadastro de usuário
+│   ├── ativar.js            // Página para ativação do cadastro (token na query string)
+│   ├── chamados
+│   │   ├── index.js         // Listagem de chamados
+│   │   ├── criar.js         // Formulário para criação de chamado
+│   │   └── [id].js          // Detalhes/atualização do chamado
+│   └── _app.js              // Configurações globais (Tailwind, contexto, etc.)
+├── components               // Componentes reutilizáveis (Header, Footer, Form, etc.)
+└── styles                   // Configuração do Tailwind e estilos customizados
