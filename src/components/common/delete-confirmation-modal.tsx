@@ -31,7 +31,6 @@ export function DeleteConfirmationModal({
         <Button
           type='button'
           title='Excluir'
-          titleClassName='bg-destructive text-destructive-foreground'
           className='gap-2 text-muted'
           variant={'outline'}
           size={'icon'}

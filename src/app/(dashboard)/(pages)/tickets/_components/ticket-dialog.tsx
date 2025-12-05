@@ -2,8 +2,7 @@
 
 import { Dialog } from '@/components/ui/dialog';
 
-type Props = React.ComponentProps<'div'>;
-export function TicketDialog(props: Props) {
+export function TicketDialog() {
   return (
     <Dialog.Root open>
       <Dialog.Content>

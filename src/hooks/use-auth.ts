@@ -97,7 +97,7 @@ export function useAuth() {
     status === 'pending' ||
     statusSign === 'pending' ||
     statusSignup === 'pending' ||
-    statusSignupConfirmation;
+    statusSignupConfirmation === 'pending';
 
   return {
     user: data,

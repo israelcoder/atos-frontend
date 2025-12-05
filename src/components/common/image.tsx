@@ -2,6 +2,6 @@ type Props = React.ComponentProps<'img'> & {
   alt: string;
 };
 export function Image(props: Props) {
-  // eslint-disable-next-line jsx-a11y/alt-text
+  // eslint-disable-next-line
   return <img {...props} />;
 }
