@@ -1,0 +1,74 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "prettier",
+    "plugin:tailwindcss/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "@typescript-eslint", "prettier","tailwindcss"],
+  "rules": {
+    "typescript-eslint/ban-ts-comment": "off",
+    "tailwindcss/no-custom-classname": "off",
+    "react/jsx-props-no-spreading": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "react/prop-types": "off",
+    "import/no-duplicates": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".tsx"]
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/camelcase": "off",
+    "import/no-anonymous-default-export": [
+      "warn",
+      {
+        "allowObject": true,
+        "allowArrowFunction": true
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "tailwindConfig": "./tailwind.config.ts",
+        "plugins": ["prettier-plugin-tailwindcss"],
+        "importOrder": [
+          "^(react/(.*)$)|^(react$)",
+          "^(next/(.*)$)|^(next$)",
+          "<THIRD_PARTY_MODULES>",
+          "",
+          "^@/tests/(.*)$",
+          "",
+          "^types$",
+          "^@/types/(.*)$",
+          "",
+          "^@/app/(.*)$",
+          "^@/components/(.*)$",
+          "^@/styles/(.*)$",
+          "",
+          "^@/env(.*)$",
+          "^@/config/(.*)$",
+          "^@/helpers/(.*)$",
+          "^@/hooks/(.*)$",
+          "^@/i18n/(.*)$",
+          "^@/lib/(.*)$",
+          "^@/services/(.*)$",
+
+          "",
+          "^[./]"
+        ]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
+      "rules": {
+        "prettier/prettier": "error"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  // Lint
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "always",
+    "source.fixAll.eslint": "always"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  // Tailwind
+  "css.lint.unknownAtRules": "ignore",
+  // Others
+  "editor.rulers": [80, 120],
+  "scss.lint.unknownAtRules": "ignore",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "github.copilot.chat.localeOverride": "pt-br",
+}
