@@ -1,11 +1,8 @@
-import { forwardRef, useRef } from 'react';
+import { forwardRef } from 'react';
 import OTPInput, { OTPInputProps } from 'react-otp-input';
 
 export const OtpInputComponent = forwardRef(
-  (props: Omit<OTPInputProps, 'renderInput'>, ref) => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const first = useRef(ref);
-
+  (props: Omit<OTPInputProps, 'renderInput'>) => {
     return (
       <OTPInput
         {...props}
